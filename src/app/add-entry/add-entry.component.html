@@ -1,0 +1,13 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Book Entry</h2>
+  <form>
+    <div class="form-group">
+      <label for="text">Text:</label>
+      <input type="text" [(ngModel)]="entry.text" placeholder="Text" name="text" class="form-control" id="text">
+    </div>
+
+    
+
+    <button class="btn btn-success" (click)="addEntry()">Create</button>
+  </form>
+</div>

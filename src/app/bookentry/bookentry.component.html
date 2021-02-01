@@ -1,0 +1,20 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Test</th>
+        <th></th>
+        <th></th>
+      </tr>
+
+    <tbody>
+      <tr *ngFor="let entry of entries">
+        <td>{{entry.id}}</td>
+        <td>{{entry.text}}</td>
+        <td><button class="btn btn-danger" (click)="deleteEntry(entry)"> Delete</button></td>
+        <td><button class="btn btn-success" (click)="approveEntry(entry)"> Aprove</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
